@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+	<!-- 设计规范颜色值 begin -->
+
+	<!-- 主背景色值 -->
+	<color name="background_color">#fcfcfc</color>
+	<color name="status_bar_bg">#EF3A19</color>
+	<color name="main_header_bg">#ff0085cf</color>
+	<color name="main_footer_bg">#f5f5f5</color>
+	<color name="grid_items_bg">#ffe8ecef</color>
+	<color name="common_bg">#fcfcfc</color>
+	<color name="divider_color">#cccccc</color>
+	<color name="normal_bg">#f6f6f6</color>
+
+	<!-- 底栏字体颜色 -->
+	<color name="footer_text_color_normal">#343434</color>
+	<color name="footer_text_color_selected">#FF601C</color>
+
+	<!-- 字体颜色值 -->
+	<color name="text_color_blue">#0081E1</color>
+	<color name="text_color_black">#343434</color>
+	<color name="text_color_white">#ffffff</color>
+	<color name="text_color_gray">#888888</color>
+	<color name="text_color_gray_light">#a8a8a8</color>
+	<color name="text_color_gray_white">#a88888</color>
+	<color name="text_color_red">#FF5B46</color>
+	<color name="text_color_hint">#ffaaaaaa</color>
+	<color name="text_color_input">#ff111111</color>
+	<color name="text_color_light">#66000000</color>
+	<color name="text_color_info">#999999</color>
+
+	<color name="btn_blue_normal">#0081e1</color>
+	<color name="btn_blue_pressed">#0066FF</color>
+	<color name="menu_pressed">#ffe0e0e0</color>
+	<color name="menu_normal">#ffe0e0e0</color>
+	<color name="menu_draw">#00000000</color>
+
+	<!-- 分割线色值 -->
+	<color name="short_blue">#48B7FF</color>
+	<color name="short_red">#FF5B46</color>
+	<color name="short_orange">#F3B720</color>
+	<color name="split_color">#D9D9D9</color>
+	<color name="border_color">#a8a8a8</color>
+	<color name="divid_color">#e1e1e1</color>
+	<color name="gray_normal">#c0c0c0</color>
+
+	<!--竖分割线-->
+	<color name="vertical_line_color">#B5B5B5</color>
+
+	<!-- 透明半透明色值 -->
+	<color name="transparent">#00000000</color>
+	<color name="transparent_half">#66000000</color>
+	<color name="transparent_background_button">#11000000</color>
+	<color name="transparent_background">#ffffff</color>
+
+	<!-- 设计规范颜色值 end-->
+
+	<!-- 黑白色值 -->
+	<color name="line_gray">#ffd7d7d7</color>
+	<color name="line">#ffd3dde6</color>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="orange">#FFA500</color>
+	<color name="gray">#808080</color>
+	<color name="red">#FF0000</color>
+	<color name="gold">#FFD700</color>
+	<color name="yellow">#FFFF00</color>
+	<color name="green">#008000</color>
+	<color name="blue">#0000FF</color>
+	<color name="purple">#800080</color>
+	<color name="pink">#FFC0CB</color>
+	<color name="yellow_lemon">#FFFACD</color>
+	<color name="gray_light">#DFDFDF</color>
+	<color name="gray_white">#F5F5F5</color>
+	<color name="gray_slate">#708090</color>
+	<color name="blue_light">#0083ff</color>
+	<color name="commo_text_color">#ff333333</color>
+
+	<!-- day -->
+	<color name="day_colorPrimary">#40AA53</color>
+	<color name="day_colorPrimaryDark">#0b751e</color>
+	<color name="day_textColor">#333333</color>
+	<color name="day_infoTextColor">#999999</color>
+	<color name="day_layout_bg_normal">#f6f6f6</color>
+	<color name="day_layout_bg_pressed">#dfdfdf</color>
+	<color name="day_line_color">#e7e7e7</color>
+	<color name="day_windows_bg">#fafafa</color>
+	<color name="day_edit_color">#333333</color>
+	<color name="day_edit_hit_color">#999999</color>
+
+	<color name="alpha_black">#aa000000</color>
+	<color name="alpha_home_listview_black">#08000000</color>
+	<color name="alpha_home_listview_white">#aaffffff</color>
+
+	<color name="x1">#ffe8e8e8</color>
+	<color name="a5">#ffffffff</color>
+	<color name="click">#6a7d7d7d</color>
+
+
+</resources>

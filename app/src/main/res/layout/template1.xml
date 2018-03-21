@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff6f7f9">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textColor="#ff505050" />
+
+            <EditText
+                android:id="@+id/et_thread_title"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:hint="最多可输入25个字符"
+                android:maxLength="25"
+                android:minHeight="50.0dip"
+                android:singleLine="true"
+                android:textColorHint="#ffacacac"/>
+        </LinearLayout>
+
+        <View style="@style/GrayLineStyle" />
+
+        <LinearLayout
+            android:id="@+id/ll_thread_type_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="频道"
+                android:textColor="#ff787878" />
+
+            <EditText
+                android:id="@+id/et_thread_type"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/icon_right_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="频道"
+                android:minHeight="50.0dip"
+                android:textColorHint="#ffacacac"
+                 />
+        </LinearLayout>
+
+
+
+        <View style="@style/GrayLineStyle" />
+
+        <LinearLayout
+            android:id="@+id/ll_thread_content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/ll_add_content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/layout_selector"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View style="@style/GrayLineStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/add_btn"
+                android:drawablePadding="5.0dip"
+                android:gravity="center"
+                android:minHeight="50.0dip"
+                android:text="添加" />
+
+            <View style="@style/GrayLineStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

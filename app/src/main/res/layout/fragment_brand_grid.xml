@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+
+    <TextView
+        android:id="@+id/tv_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_bg"
+        android:drawablePadding="10.0dip"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:text="常用品牌"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:textColor="@color/text_color_blue" />
+
+    <com.topway.fine.ui.scrollview.GridScrollView
+        android:id="@+id/gv_brand"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:numColumns="4" />
+
+    <RelativeLayout
+        android:id="@+id/re_next_bar"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_next_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:text="全部品牌"
+            android:textColor="@color/text_color_blue"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_setting_arrow"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

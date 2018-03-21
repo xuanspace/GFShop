@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bg_devider"
+    android:baselineAligned="true"
+    android:clickable="false"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/look_house"
+        android:layout_width="68.0dip"
+        android:layout_height="fill_parent"
+        android:drawableTop="@drawable/icon_chat"
+        android:gravity="center"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip"
+        android:text="客服"
+        android:textSize="12.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff8d8c92" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="36.0dip"
+        android:layout_gravity="center_vertical"
+        android:background="#ffe6e6e6" />
+
+    <TextView
+        android:id="@+id/favorite"
+        android:layout_width="68.0dip"
+        android:layout_height="fill_parent"
+        android:drawableTop="@drawable/selector_icon_fav"
+        android:gravity="center"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip"
+        android:text="收藏"
+        android:textSize="12.0sp"
+        android:textStyle="normal"
+        android:textColor="#ff8d8c92" />
+
+    <TextView
+        android:id="@+id/youhui"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:alpha="0.85"
+        android:background="#ffe54b00"
+        android:gravity="center"
+        android:text="加入购物车"
+        android:textSize="17.0sp"
+        android:textStyle="normal"
+        android:textColor="#ffffffff"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/call"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="#ff69a410"
+        android:gravity="center"
+        android:text="打电话联系"
+        android:textSize="15.0sp"
+        android:textStyle="normal"
+        android:textColor="#ffffffff" />
+</LinearLayout>

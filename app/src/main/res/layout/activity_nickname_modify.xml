@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:fitsSystemWindows="true"
+      android:background="#fffafafa"
+      android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip">
+
+        <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/back_selecter" />
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:textSize="18sp"
+                android:textColor="#ff444444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="个人信息" />
+
+        <TextView
+                android:id="@+id/save_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:enabled="false"
+                android:text="保存"
+                android:textColor="#ff00a0e9"
+                android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="5.0dip"
+            android:background="#ffdfdfdf" />
+
+    <RelativeLayout
+            android:id="@+id/modify_password_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="59.0dip"
+            android:background="#ffffffff">
+
+        <EditText
+                android:id="@+id/nick_name_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@null"
+                android:maxLength="32"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textCursorDrawable="@drawable/cursor_color" />
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffdfdfdf" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginRight="18.0dip"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:text="@string/nickname_tip"
+            android:textColor="@color/text_color_gray"
+            android:textSize="15.0sp" />
+</LinearLayout>

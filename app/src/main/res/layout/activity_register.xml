@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:background="@drawable/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="fill_parent"
+            android:layout_height="180.0dip"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginRight="18.0dip"
+            android:layout_marginTop="150.0dip"
+            android:background="@drawable/login_rect_white">
+
+            <RelativeLayout
+                android:id="@+id/layoutPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip">
+
+                <ImageView
+                    android:id="@+id/imgPhone"
+                    android:layout_width="15.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/login_phone" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/imgPhone"
+                    android:background="@null"
+                    android:hint="@string/phone_hint"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="15.0dip"
+                    android:digits="1234567890"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#ffaaaaaa"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@+id/imgClean"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/close"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutPasswd"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:layout_below="@+id/layoutPhone">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffdddddd" />
+
+                <ImageView
+                    android:id="@+id/imgPasswd"
+                    android:layout_width="15.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/login_lock" />
+
+                <EditText
+                    android:id="@+id/passwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="11"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#ffaaaaaa"
+                    android:textSize="16.0sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgPasswd"
+                    android:layout_toEndOf="@+id/imgPasswd" />
+
+                <ImageView
+                    android:id="@+id/imgShow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.0dip"
+                    android:src="@drawable/eye_default"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:layout_below="@+id/layoutPasswd">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffdddddd" />
+
+                <ImageView
+                    android:id="@+id/imgCode"
+                    android:layout_width="15.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/login_lock" />
+
+                <EditText
+                    android:id="@+id/code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/imgCode"
+                    android:background="@null"
+                    android:hint="验证码"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:digits="1234567890"
+                    android:paddingLeft="15.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#ffaaaaaa"
+                    android:textSize="16.0sp" />
+
+                <Button
+                    android:id="@+id/btnGetCode"
+                    android:layout_width="94.0dip"
+                    android:layout_height="33.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/shape_button2"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:text="获取验证码"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_below="@+id/rl_1"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginRight="18.0dip"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/shape_button2"
+            android:clickable="true"
+            android:enabled="true"
+            android:text="注册"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="10.0dip"
+            android:layout_height="10.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40.0dip"
+            android:background="@drawable/login_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/text_color_white"
+            android:text="点击注册按钮,即表示同意用户条款和隐私条款"
+            android:id="@+id/agreement"
+            android:layout_below="@+id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

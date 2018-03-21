@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_group_item" >
+
+    <RelativeLayout
+        android:id="@+id/category_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:src="@drawable/star_orange"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="10.0dip"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:includeFontPadding="false"
+            android:text="小松"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textSize="15.0sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

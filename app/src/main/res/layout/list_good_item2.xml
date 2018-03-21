@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_group_item" >
+
+    <RelativeLayout
+        android:id="@+id/re_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dp"
+        android:layout_marginLeft="15dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:src="@drawable/default_image"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:includeFontPadding="false"
+            android:text="小松"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:includeFontPadding="false"
+            android:text=""
+            android:singleLine="true"
+            android:textColor="@color/text_color_gray"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="300.00"
+            android:textSize="14sp"
+            android:textColor="#FF9C0707"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

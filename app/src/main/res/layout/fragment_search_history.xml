@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_search_history"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#fff2f2f2">
+
+    <ScrollView
+        android:id="@+id/history_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/search_hot_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/search_hot_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40.669983dip"
+                android:layout_marginLeft="17.0dip"
+                android:layout_marginRight="17.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/hot_search"
+                android:textColor="#ff5e5b5b" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="17.0dip"
+                android:background="#ffd3d3d3" />
+
+            <com.topway.fine.ui.flowlayout.TagFlowLayout
+                android:id="@+id/search_hot_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.669983dip"
+                android:layout_marginLeft="17.0dip"
+                android:layout_marginRight="17.0dip"
+                android:paddingTop="10dip"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_history_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.669983dip"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="17.0dip">
+
+            <TextView
+                android:id="@+id/search_history_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40.669983dip"
+                android:layout_marginRight="17.0dip"
+                android:gravity="center_vertical"
+                android:hint="@string/search_history"
+                android:textColor="#ff5e5b5b" />
+
+            <include layout="@layout/view_row_line" />
+
+            <ListView
+                android:id="@+id/search_history_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#ff000000"
+                android:listSelector="#00000000" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_row_line" />
+
+        <LinearLayout
+            android:id="@+id/search_history_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginTop="12.0dip"
+            android:background="@drawable/click_selector"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_row_line" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/clearing_history"
+                android:textColor="#ff5e5b5b"
+                android:textSize="14.129974dip" />
+        </LinearLayout>
+
+        <include layout="@layout/view_row_line" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

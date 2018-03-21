@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_search_filter"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/re_sort_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@+id/tv_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="排序"
+            android:textColor="@color/text_color_black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_sort"
+            android:scaleType="fitXY"
+            android:src="@drawable/qb_down"
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_brand_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="品牌"
+            android:textColor="@color/text_color_black"
+            android:textSize="13.0dip" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_brand"
+            android:scaleType="fitXY"
+            android:src="@drawable/qb_down"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_serie_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@+id/tv_serie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="机型"
+            android:textColor="@color/text_color_black"
+            android:textSize="13.0dip" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_serie"
+            android:scaleType="fitXY"
+            android:src="@drawable/qb_down"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_engine_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@+id/tv_engine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="发动机"
+            android:textColor="@color/text_color_black"
+            android:textSize="13.0dip" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_engine"
+            android:scaleType="fitXY"
+            android:src="@drawable/qb_down"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_part_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@+id/tv_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="部件"
+            android:textColor="@color/text_color_black"
+            android:textSize="13.0dip" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_part"
+            android:scaleType="fitXY"
+            android:src="@drawable/qb_down"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

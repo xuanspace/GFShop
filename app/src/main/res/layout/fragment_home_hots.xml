@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/tv_hot"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="部件类型"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <View style="@style/GrayLineStyle" />
+
+    <com.topway.fine.ui.scrollview.GridScrollView
+        android:id="@+id/gv_hot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:layout_below="@id/tv_hot"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp" />
+
+</LinearLayout>

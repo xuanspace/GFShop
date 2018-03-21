@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ebebeb">
+
+    <include layout="@layout/layout_main_title" />
+
+    <com.topway.fine.ui.scrollview.VerticalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f6f6f6"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ebebeb"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#ebebeb"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:textColor="#888888"
+                    android:textSize="14sp"
+                    android:text="部件品牌:"
+                    android:singleLine="true"
+                    android:textColorHint="#AAAAAA"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#d9d9d9" />
+
+                <RelativeLayout
+                    android:id="@+id/re_brand"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_bar_height"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/one" />
+
+                    <TextView
+                        android:id="@+id/tv_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:text=""
+                        android:hint="选择品牌..."
+                        android:textColor="#353535"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_select"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/ic_setting_arrow" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#ebebeb"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:textColor="#888888"
+                    android:textSize="14sp"
+                    android:text="发动机型号:"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#d9d9d9" />
+
+                <RelativeLayout
+                    android:id="@+id/re_engine"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_bar_height">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/two" />
+
+                    <TextView
+                        android:id="@+id/tv_engine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:hint="选择发动机型号..."
+                        android:textColor="#353535"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/ic_setting_arrow" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#ebebeb"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:textColor="#888888"
+                    android:textSize="14sp"
+                    android:text="部件类型:"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#d9d9d9" />
+
+                <RelativeLayout
+                    android:id="@+id/re_category"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_bar_height">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/tree" />
+
+                    <TextView
+                        android:id="@+id/tv_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:hint="选择部件类型..."
+                        android:textColor="#353535"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/ic_setting_arrow" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_lable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="#ebebeb"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:text="部件名称:" />
+
+
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="#ebebeb"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="14sp"
+                        android:text=""
+                        android:layout_toRightOf="@+id/tv_lable"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#d9d9d9" />
+
+                <RelativeLayout
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_bar_height">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/four" />
+
+                    <EditText
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:text=""
+                        android:hint="部件名称..."
+                        android:textColor="#353535"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#ebebeb"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:textColor="#888888"
+                    android:textSize="14sp"
+                    android:text="部件单价:" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#d9d9d9"/>
+
+                <RelativeLayout
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_bar_height">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/five" />
+
+                    <EditText
+                        android:id="@+id/ev_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:text="0.0"
+                        android:digits="1234567890."
+                        android:textColor="#353535"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#ebebeb"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:textColor="#888888"
+                    android:textSize="14sp"
+                    android:text="部件数量:" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#d9d9d9"/>
+
+                <RelativeLayout
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_bar_height">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/six" />
+
+                    <EditText
+                        android:id="@+id/ev_quntity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:text="1"
+                        android:digits="1234567890"
+                        android:textColor="#353535"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#ebebeb"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:textColor="#888888"
+                    android:textSize="14sp"
+                    android:text="部件描述:" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#d9d9d9"/>
+
+                <RelativeLayout
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_bar_height">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/seven" />
+
+                    <EditText
+                        android:id="@+id/ev_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:hint="宝贝的描述"
+                        android:text=""
+                        android:digits="1234567890"
+                        android:textColor="#353535"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/re_logo"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#ebebeb"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:textColor="#888888"
+                    android:textSize="14sp"
+                    android:text="添加图片:" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#d9d9d9" />
+
+                <RelativeLayout
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <GridView
+                        android:id="@+id/gv_photo"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:horizontalSpacing="3dp"
+                        android:numColumns="4"
+                        android:scrollbars="none"
+                        android:verticalSpacing="5dp" >
+                    </GridView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/btn_save"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="保存"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.topway.fine.ui.scrollview.VerticalScrollView>
+
+
+</LinearLayout>
+

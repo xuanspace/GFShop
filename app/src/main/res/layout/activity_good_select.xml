@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:expandable="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ebebeb">
+
+    <include layout="@layout/layout_main_title" />
+
+    <RelativeLayout
+        android:id="@+id/re_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/btn_list_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_header_logo"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/part" />
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_header_logo"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="部件品牌"
+                android:textColor="#353535"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/default_image" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_header_subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iv_header_logo"
+            android:text="Excavator Engine Model"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_marginRight="32dp"
+            android:src="@drawable/star_orange"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_search"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/edit_line"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:paddingLeft="46dp"
+            android:singleLine="true"
+            android:hint="搜索"
+            android:textColor="@color/text_color_gray"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@id/tv_search"
+            android:layout_alignLeft="@id/tv_search"
+            android:layout_margin="6dp"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ebebeb"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:id="@+id/tv_group"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:text="部件价格:"
+            android:textColor="#353535"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_addmore"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/add_btn_normal"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DBDBDB" />
+    </RelativeLayout>
+
+    <com.topway.fine.ui.loadmore.LoadMoreListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_item_selector"
+        android:divider="@null"
+        style="@style/CommonListViewStyle" />
+
+
+</LinearLayout>

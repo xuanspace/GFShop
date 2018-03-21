@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="70dp"
+    android:layout_marginRight="70dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg_context_menu">
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_context_menu_bar"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="copy"
+        android:padding="10dp"
+        android:text="删除该项"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_context_menu_bar"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="delete"
+        android:padding="10dp"
+        android:text="编辑该项"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_context_menu_bar"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="delete"
+        android:padding="10dp"
+        android:text="移到顶部"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray" />
+    <TextView
+        android:id="@+id/tv_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_context_menu_bar"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="delete"
+        android:padding="10dp"
+        android:text="设为常用"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray" />
+    <TextView
+        android:id="@+id/tv_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_context_menu_bar"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="delete"
+        android:padding="10dp"
+        android:text="选择该项"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

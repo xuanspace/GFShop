@@ -1,0 +1,1 @@
+include ':app', ':dao', ':SMSSDK', ':lib-bither-compress'

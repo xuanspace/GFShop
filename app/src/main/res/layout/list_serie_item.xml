@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_group_item" >
+
+    <RelativeLayout
+        android:id="@+id/re_item"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@+id/group_count"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:includeFontPadding="false"
+            android:text="小松"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textSize="15.0sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">广福商城</string>
+	<string name="app_copyright_reserved">广福商城 版权所有</string>
+
+	<string name="clear_cache_menu">Clear Caches</string>
+	<string name="clear_cache_complete_toast">Caches have been cleared</string>
+	<string name="imageview_description">Image Thumbnail</string>
+	<string name="no_network_connection_toast">No network connection found</string>
+
+	<!-- 页面名称 -->
+	<string name="main_navigation_home">首页</string>
+	<string name="main_navigation_im">分类</string>
+	<string name="main_navigation_interest">部件</string>
+	<string name="main_navigation_user">我的</string>
+
+	<string name="market_info_title">市场</string>
+	<string name="progress_loading">加载中，请稍候</string>
+	<string name="progress_load_error">加载失败，点击屏幕刷新</string>
+	<string name="progress_load_no_data">暂无数据</string>
+
+	<!-- 手势密码 -->
+	<string name="string_security_setting">安全设置</string>
+	<string name="string_gesture_password">手势密码</string>
+	<string name="string_modify_gesture_password">修改手势密码</string>
+	<string name="string_set_gesture_password">设置手势密码</string>
+	<string name="string_guide_info">您可以创建一个</string>
+	<string name="string_guide_info_right">手势密码图案</string>
+	<string name="string_guide_info_last">使用手势密码进行登录，安全、便捷</string>
+
+	<string name="retry_gesture">重新绘制解锁图案</string>
+	<string name="draw_gesture">绘制解锁图案</string>
+	<string name="draw_gesture_again">再次输入手势密码</string>
+	<string name="draw_gesture_not_same">与上次绘制不一致，请重新绘制</string>
+	<string name="gesture_login_five_failed">登录错误过多，账号被注销</string>
+	<string name="draw_gesture_need_six_dot">至少连接六个点，请重新绘制</string>
+	<string name="draw_gesture_left_chances">输入手势密码错误，还有%s次机会</string>
+	<string name="forget_gesture_need_login">忘记手势密码，需重新登录</string>
+	<string name="draw_gesture_error_clear_login">输入手势密码错误5次，登录状态已清除</string>
+	<string name="set_complete">设置成功</string>
+	<string name="forget_gesture">忘记手势密码</string>
+
+	<!-- 上拉加载，下拉刷新 -->
+	<string name="pull_to_refresh">下拉可以刷新</string>
+	<string name="release_to_refresh">松开可以刷新</string>
+	<string name="lastUpdateTime">最近更新：%s</string>
+	<string name="load_full">已加载全部</string>
+	<string name="no_data">暂无数据</string>
+	<string name="more">加载中</string>
+
+	<!-- 消除警告，可忽略 -->
+	<string name="d">图片描述</string>
+
+	<!-- 标题栏名称 -->
+	<string name="home_title">广福工程机械</string>
+	<string name="brand_title">品牌</string>
+	<string name="brand_title_add">添加品牌</string>
+	<string name="brand_title_edit">编辑品牌</string>
+	<string name="engine_title">发动机</string>
+	<string name="category_title">分类目录</string>
+	<string name="serie_title">挖机机型</string>
+	<string name="part_title">部件</string>
+	<string name="product_title">产品</string>
+
+	<!-- 登录注册 -->
+	<string name="nickname_tip">昵称规则为 4-32字符，支持中文，字母，下划线</string>
+	<string name="loginout_tip">登录/注册</string>
+	<string name="phone_bind">已绑定</string>
+	<string name="phone_unbind">未绑定</string>
+	<string name="my_part">我的部件</string>
+	<string name="show_allpart">查看全部部件</string>
+	<string name="phone_hint">手机号码</string>
+	<string name="password_hint">6-16位字母或者数字</string>
+
+	<!-- 相册图片 -->
+	<string name="folder_all">所有图片</string>
+	<string name="preview">预览</string>
+	<string name="no_camera">No system camera found</string>
+	<string name="amount_limit">Select images amount is limit</string>
+	<string name="preview_format">预览(%s)</string>
+	<string name="confirm_format">完成(%1$d/%2$d)</string>
+	<string name="confirm">完成</string>
+	<string name="page_number_format">%1$d/%2$d</string>
+
+	<!-- 搜索部件 -->
+	<string name="search_hint">请输入搜索部件</string>
+	<string name="hot">热</string>
+	<string name="hot_search">热门搜索</string>
+	<string name="include">包含：</string>
+	<string name="search_history">搜索历史</string>
+	<string name="search_no_data">没有找到相关商品</string>
+	<string name="search_parts">件</string>
+	<string name="clearing_history">清除历史记录</string>
+
+	<!-- Error View -->
+	<string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+	<string name="error_view_no_data">暂无内容</string>
+	<string name="error_view_loading">加载中…</string>
+	<string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+	<string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+	<string name="tip_network_error">没有可用的网络</string>
+
+</resources>

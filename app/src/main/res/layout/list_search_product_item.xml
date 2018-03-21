@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="131dip"
+    android:background="@drawable/bg_search_product"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="10.0dip"
+    android:paddingTop="10.0dip">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/tv_product_pic"
+        android:layout_width="110.0dip"
+        android:layout_height="110.0dip"
+        fresco:placeholderImage="@drawable/default_image" />
+
+    <View
+        android:id="@+id/v_picture_bg"
+        android:layout_width="110.0dip"
+        android:layout_height="20.0dip"
+        android:layout_alignBottom="@+id/tv_product_pic"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/view_float_bg"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_picture_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="16.0dip"
+        android:layout_alignBottom="@+id/tv_product_pic"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginLeft="38.0dip"
+        android:gravity="center"
+        android:text="热销中"
+        android:textColor="#ffffffff"
+        android:textSize="12.0dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_toRightOf="@+id/tv_product_pic"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="日本进口TAIHAO 日立PC200-6 6D95 大瓦加25"
+        android:textColor="#ff252525"
+        android:textSize="17.0dip" />
+
+    <TextView
+        android:id="@+id/tv_product_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/tv_product_pic"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="sssdsd"
+        android:textColor="@color/text_color_gray"
+        android:textSize="13.0dip" />
+
+    <RelativeLayout
+        android:id="@+id/re_price"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@id/tv_product_pic"
+        android:layout_below="@id/tv_product_desc">
+
+        <TextView
+            android:id="@+id/pricePre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentLeft="true"
+            android:text="￥"
+            android:textColor="#ee3827"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pricePre"
+            android:text="300.00"
+            android:textColor="#ee3827"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/priceUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_price"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_desc"
+        android:layout_marginTop="13.0dip"
+        android:layout_toRightOf="@+id/re_price"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tag_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/tag_mobile"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:paddingRight="4.0dip"
+            android:singleLine="true"
+            android:text="批发价"
+            android:textColor="#fff15353"
+            android:textSize="11.0sp"
+            />
+
+        <ImageView
+            android:id="@+id/tv_tag_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@null"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_evaluate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_product_pic"
+        android:layout_alignLeft="@+id/tv_product_name">
+
+        <TextView
+            android:id="@+id/tv_good_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="15.0dip"
+            android:layout_alignParentBottom="true"
+            android:text="好评98%"
+            android:textColor="#ff848689"
+            android:textSize="13.0dip" />
+
+        <TextView
+            android:id="@+id/tv_evaluate_count"
+            android:layout_width="wrap_content"
+            android:layout_height="15.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@+id/tv_good_evaluate"
+            android:text="100人"
+            android:textColor="#ff848689"
+            android:textSize="13.0dip" />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/ib_more_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginRight="5.0dip"
+        android:background="@null"
+        android:src="@drawable/vodt_light"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip"
+        android:layout_below="@+id/tv_product_pic"
+        android:layout_marginTop="10.0dip"
+        android:background="#ffe0e0e0" />
+</RelativeLayout>

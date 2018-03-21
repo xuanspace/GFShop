@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aey"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#aa000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="120.0dip"
+        android:layout_height="wrap_content"
+        android:background="@color/a5"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:background="#ffe0e0e0" />
+
+        <TextView
+            android:id="@+id/aez"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:background="@drawable/menu_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="全部"
+            android:textColor="#ff686868"
+            android:textSize="13.0dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffe0e0e0" />
+
+        <TextView
+            android:id="@+id/af0"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:background="@drawable/menu_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="0 - 49"
+            android:textColor="#ff686868"
+            android:textSize="13.0dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffe0e0e0" />
+
+        <TextView
+            android:id="@+id/af1"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:background="@drawable/menu_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="50 - 199"
+            android:textColor="#ff686868"
+            android:textSize="13.0dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffe0e0e0" />
+
+        <TextView
+            android:id="@+id/af2"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:background="@drawable/menu_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="200 - 499"
+            android:textColor="#ff686868"
+            android:textSize="13.0dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffe0e0e0" />
+
+        <TextView
+            android:id="@+id/af3"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:background="@drawable/menu_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="500 - 999"
+            android:textColor="#ff686868"
+            android:textSize="13.0dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffe0e0e0" />
+
+        <TextView
+            android:id="@+id/af4"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:background="@drawable/menu_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="1000 - 2499"
+            android:textColor="#ff686868"
+            android:textSize="13.0dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffe0e0e0" />
+
+        <TextView
+            android:id="@+id/af5"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:background="@drawable/menu_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="2500及以上"
+            android:textColor="#ff686868"
+            android:textSize="13.0dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffe0e0e0" />
+    </LinearLayout>
+</LinearLayout>

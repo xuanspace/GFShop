@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff2f2f2"
+    android:paddingBottom="10dip"
+    android:paddingLeft="20dip"
+    android:paddingRight="5dip"
+    android:paddingTop="20dip">
+
+    <TextView
+        android:id="@+id/city_header_text"
+        style="@style/header_bar"
+        android:text="标题" />
+</RelativeLayout>

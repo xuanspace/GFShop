@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ebebeb">
+
+    <include layout="@layout/fragment_search_bar" />
+    <View style="@style/GrayLineStyle" />
+
+    <include layout="@layout/fragment_search_filter" />
+    <View style="@style/GrayLineStyle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/fragment_search_history" />
+        <include layout="@layout/fragment_search_result" />
+
+    </RelativeLayout>
+
+</LinearLayout>
